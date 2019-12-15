@@ -11,9 +11,9 @@ public class App
 {
     public static void main( String[] args )
     {
-       AbstractApplicationContext context2 = new ClassPathXmlApplicationContext("com/bharath/spring/dependencycheck/config.xml");
+       AbstractApplicationContext context3 = new ClassPathXmlApplicationContext("com/bharath/spring/dependencycheck/config.xml");
        
-       Prescription emp = (Prescription)context2.getBean("prescription");
+       Prescription emp = (Prescription)context3.getBean("prescription");
        
        System.out.println(emp.toString());
        
